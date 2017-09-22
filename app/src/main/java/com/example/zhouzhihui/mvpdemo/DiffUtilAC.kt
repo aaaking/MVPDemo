@@ -4,24 +4,22 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.widget.FrameLayout
-import android.widget.TextView
 import android.support.v7.widget.RecyclerView.ViewHolder
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.zhouzhihui.mvpdemo.DiffUtilAC.HomeAdapter
-import android.support.v7.widget.LinearLayoutManager
-
-
-
+import android.widget.FrameLayout
+import android.widget.TextView
+import nz.co.trademe.mapme.MapMeAdapter
 
 
 /**
  * Created by 周智慧 on 2017/9/22.
  */
 class DiffUtilAC : AppCompatActivity() {
+    var fage: MapMeAdapter<Any>? = null
     lateinit var recyclerView: RecyclerView
     internal lateinit var mAdapter: HomeAdapter
     companion object {

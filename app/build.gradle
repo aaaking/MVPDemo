@@ -33,4 +33,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.github.stfalcon:mvphelper:0.2.1'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    compile 'nz.co.trademe.mapme:mapme:1.0.4', {
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+        exclude group: 'com.android.support', module: 'recyclerview-v7'
+    }
 }
